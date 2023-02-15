@@ -1,0 +1,78 @@
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@500&family=The+Nautigal&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* nav styles */
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+.nav-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.banner {
+    text-align: center;
+}
+.banner-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 32px;
+}
+.banner-description {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 33px;
+}
+.btn {
+    height: 64px;
+    width: 180px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    padding: 20px 25px;
+    margin-bottom: 50px;
+}
+.banner img {
+    width: 1240px;
+    height: 600px;
+    margin-bottom: 45px;
+}
+
+/* main styles */
+
+.features{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 100px;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
