@@ -90,7 +90,8 @@ header ul {
     display: flex;
     gap: 54px;
 }
-.more-feature-title{
+
+.more-feature-title {
     font-size: 45px;
     font-weight: 700;
     color: #131313;
@@ -129,20 +130,23 @@ header ul {
     margin-bottom: 20px;
 }
 
-.facts{
+.facts {
     padding-left: 100px;
 }
-.fact-title{
+
+.fact-title {
     font-size: 53px;
     font-weight: 700;
     color: #131313;
 }
-.fact-description{
+
+.fact-description {
     font-size: 16px;
     color: #727272;
     margin-bottom: 100px;
 }
-.box{
+
+.box {
     text-align: center;
     padding: 20px;
     border: 1px solid #FF900E;
@@ -153,14 +157,40 @@ header ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: width 8s, height 8s, transform 2s ;
-}
-.boxes{
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    transition: width 8s, height 8s, transform 2s;
 }
 
-.box:hover{
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box:hover {
     transform: rotate(180deg);
+}
+
+.sponsors {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsor img {
+    filter: grayscale(100%);
+}
+
+/* footer styles */
+.footer {
+    padding: 39px;
+    margin-top: 130px;
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
