@@ -95,6 +95,8 @@ header ul {
     font-size: 45px;
     font-weight: 700;
     color: #131313;
+    padding-left: 10px;
+    border-left: 4px solid #FF900E;
 }
 
 .more-features img {
