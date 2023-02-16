@@ -13,7 +13,6 @@ body {
 header {
     background: rgba(255, 144, 14, 0.1);
 }
-
 .navigation {
     display: flex;
     align-items: center;
@@ -21,36 +20,30 @@ header {
     padding: 50px;
 
 }
-
 .nav-title {
     font-size: 45px;
     font-weight: 700;
     color: #131313;
 }
-
 header ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
-
 .banner {
     text-align: center;
 }
-
 .banner-title {
     font-size: 64px;
     font-weight: 700;
     color: #131313;
     margin-bottom: 32px;
 }
-
 .banner-description {
     font-size: 16px;
     color: #727272;
     margin-bottom: 25px;
 }
-
 .btn {
     height: 64px;
     width: 180px;
@@ -63,7 +56,6 @@ header ul {
     padding: 20px 25px;
     margin-bottom: 50px;
 }
-
 .banner img {
     width: 1240px;
     height: 600px;
@@ -78,30 +70,25 @@ header ul {
     gap: 25px;
     padding: 100px;
 }
-
 .team {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-
 .more-features {
     padding: 80px;
     display: flex;
     gap: 54px;
 }
-
 .more-feature-title {
     font-size: 45px;
     font-weight: 700;
     color: #131313;
 }
-
 .more-features img {
     width: 708px;
     height: 982px;
 }
-
 .btn-2 {
     height: 160px;
     width: 320px;
@@ -116,12 +103,10 @@ header ul {
     bottom: 100px;
     right: 30px;
 }
-
 .btn-2 small {
     font-size: 16px;
     font-family: 400;
 }
-
 .features-box {
     padding: 20px;
     background: #FFFFFF;
@@ -129,23 +114,19 @@ header ul {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
 .facts {
     padding-left: 100px;
 }
-
 .fact-title {
     font-size: 53px;
     font-weight: 700;
     color: #131313;
 }
-
 .fact-description {
     font-size: 16px;
     color: #727272;
     margin-bottom: 100px;
 }
-
 .box {
     text-align: center;
     padding: 20px;
@@ -159,38 +140,108 @@ header ul {
     justify-content: center;
     transition: width 8s, height 8s, transform 2s;
 }
-
 .boxes {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .box:hover {
     transform: rotate(180deg);
 }
-
 .sponsors {
     margin-top: 150px;
     text-align: center;
 }
-
 .sponsor {
     display: flex;
     justify-content: space-around;
 }
-
 .sponsor img {
     filter: grayscale(100%);
+}
+
+/* extra section styles */
+.extra-section{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-form {
+    border: 1px solid #F15B22;
+    padding-right: 150px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.subscribe-title {
+    color: #F15B22;
+    font-size: 25px;
+    font-weight: 600;
+}
+#email-form {
+    position: absolute;
+    height: 50px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #151414;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 21px;
+}
+.btn-3 {
+    margin-top: 65px;
+    height: 60 px;
+    width: 150px;
+    border-radius: 8px;
+    background: #F15B22;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    padding: 15px 20px;
 }
 
 /* footer styles */
 .footer {
     padding: 39px;
-    margin-top: 130px;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 130px;
     background: #FFF4E7;
     border-radius: 8px;
-    margin-right: 200px;
-    margin-left: 200px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 668px){
+    .navigation, ul, .features, .more-features, .boxes, .extra-section, .sponsor{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .banner img, .more-features img, .extra-section img{
+        height: 100%;
+        width: 100%;
+    }
+    .sponsor img{
+        width: 50%;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+    .facts{
+        padding: 0;
+        text-align: center;
+    }
+    .team{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn-2{
+        display: none;
+    }
+    .box{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
 }
